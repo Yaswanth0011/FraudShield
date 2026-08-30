@@ -1,0 +1,25 @@
+# Raw large Kaggle datasets (keep simulated demo data tracked)
+data/creditcard.csv
+data/*.zip
+
+# Python Bytecode & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Jupyter & IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Test & Coverage Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
