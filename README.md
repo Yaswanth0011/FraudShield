@@ -1,4 +1,4 @@
-# 🛡️ SentinelShield AI — Fraud Risk Intelligence & Analyst Workspace
+# 🛡️ FraudShield — Fraud Risk Intelligence & Analyst Workspace
 
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
@@ -6,17 +6,71 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-15B064?logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **SentinelShield AI** is an enterprise-grade fraud risk intelligence platform and analyst workspace. Moving beyond basic machine learning demos, SentinelShield provides real-time portfolio surveillance, 3-tier risk classification, dynamic decision thresholding, and an interactive transaction investigation workbench for fraud operations teams.
+> **FraudShield** is a fraud risk intelligence platform and analyst workspace. Moving beyond basic machine learning demos, FraudShield provides portfolio surveillance, 3-tier risk classification, dynamic decision thresholding, and an interactive transaction investigation workbench for fraud operations teams.
+
+---
+
+## 🎯 Product Problem & Users
+
+### Problem Statement
+Fraud analysts need to identify suspicious transactions quickly while minimizing false positives that create unnecessary customer friction. FraudShield provides ML-based risk scoring and an analyst-oriented workspace for monitoring, triaging, and investigating suspicious transactions.
+
+### Target User Persona
+- **Primary User**: Fraud Operations Analyst / Risk Operations Team
+- **Core Pain Point**: Too many transactions require manual review, causing analyst fatigue, delayed transaction clearances, and increased operational costs.
+- **Product Goal**: Prioritize suspicious transactions based on risk tiers so analysts focus only on high-uncertainty cases while automating low-risk approvals.
+
+---
+
+## 💡 Product Decisions & Success Metrics
+
+### Product Alignment Matrix
+| Product Dimension | Description |
+| :--- | :--- |
+| **Target User** | Fraud Operations Analyst |
+| **Core Pain Point** | Too many transactions require manual review, causing queue bottlenecks. |
+| **Product Goal** | Prioritize suspicious transactions based on risk scoring and actionable tiers. |
+
+### Core Success Metrics
+- 🎯 **Fraud Detection Rate (Recall)**: Percentage of fraudulent transactions successfully caught.
+- 📉 **False-Positive Rate**: Percentage of legitimate transactions incorrectly flagged.
+- ⏱️ **Manual Review Volume**: Reduction in total transaction volume requiring human intervention.
+- ⚡ **Average Investigation Time**: Time taken by an analyst to triage and resolve a flagged transaction.
+- 💰 **Amount of Fraud Prevented**: Total monetary value protected through proactive blocking.
+
+---
+
+## 🏗️ System Architecture
+
+```text
+Transaction Data
+       ↓
+Preprocessing
+       ↓
+ML Model
+       ↓
+Fraud Probability
+       ↓
+Risk Engine
+       ↓
+┌──────────────┐
+│ LOW          │ → APPROVE
+│ MEDIUM       │ → REVIEW
+│ HIGH         │ → BLOCK
+└──────────────┘
+       ↓
+Analyst Dashboard
+```
 
 ---
 
 ## 📸 Platform Interface & Screenshots
 
 ### 1. 📊 Executive Fraud Analytics Dashboard
-![SentinelShield Dashboard Overview](assets/sentinel_dashboard_overview.png)
+![FraudShield Dashboard Overview](assets/fraudshield_dashboard_overview.png)
 
 ### 2. 🔍 Fraud Analyst Investigation View & Anomaly Explainability
-![SentinelShield Fraud Analysis](assets/sentinel_fraud_analysis.png)
+![FraudShield Fraud Analysis](assets/fraudshield_fraud_analysis.png)
 
 ---
 
@@ -37,7 +91,7 @@ Surveillance and portfolio monitoring with 5 top-level KPI metrics and 4 visual 
   - 📈 **Risk-Score Distribution** — Histogram of model probabilities across the 0% to 100% risk spectrum.
 
 ### 2. 🎯 3-Tier Transaction Risk Levels
-Rather than binary classification, SentinelShield categorizes transactions into actionable risk bands:
+Rather than binary classification, FraudShield categorizes transactions into actionable risk bands:
 - `0% – 30%` ➔ **🟢 LOW RISK** (`APPROVE`)
 - `30% – 70%` ➔ **🟡 MEDIUM RISK** (`MANUAL REVIEW`)
 - `70% – 100%` ➔ **🔴 HIGH RISK** (`BLOCK & DECLINE`)
@@ -58,7 +112,7 @@ A dedicated workspace for operations teams to triage individual transactions:
 
 ```
 credit-card-fraud-detection/
-├── README.md                           # Documentation, features & academic attribution
+├── README.md                           # Documentation, PM decisions & attribution
 ├── LICENSE                             # MIT License
 ├── requirements.txt                    # Project dependencies
 ├── .gitignore                          # Clean gitignore for large data & ML caches
@@ -66,8 +120,8 @@ credit-card-fraud-detection/
 ├── config.py                           # Root configuration forwarder
 │
 ├── assets/                             # Visual assets & screenshots
-│   ├── sentinel_dashboard_overview.png
-│   ├── sentinel_fraud_analysis.png
+│   ├── fraudshield_dashboard_overview.png
+│   ├── fraudshield_fraud_analysis.png
 │   ├── screenshot1.png
 │   └── screenshot2.png
 │
@@ -143,13 +197,10 @@ pytest tests/ -v
 
 ### 💡 Algorithmic Baseline Disclaimer & Project Scope
 - The predictive algorithms (Random Forest, Logistic Regression, XGBoost) and PCA dimensional features are standard supervised learning and dimensionality reduction implementations from open-source libraries (`scikit-learn`, `xgboost`). They are not claimed to be proprietary algorithms.
-- **Project Scope & Contribution**: SentinelShield AI contributes the production-grade modular architecture, 3-tier risk scoring engine, dynamic sensitivity threshold calibration, analyst investigation workspace, and executive surveillance dashboard.
+- **Project Scope & Contribution**: FraudShield provides a modular architecture, 3-tier risk scoring engine, dynamic sensitivity threshold calibration, analyst investigation workspace, and executive surveillance dashboard.
 
 ---
 
 ## 📄 License
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
-=======
-# FraudShield
->>>>>>> f07d3267688a32795e5b1476f9fb7931279063b3

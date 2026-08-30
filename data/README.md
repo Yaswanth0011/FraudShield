@@ -1,4 +1,4 @@
-# 📊 SentinelShield AI — Data Documentation & Dataset Card
+# 📊 FraudShield — Data Documentation & Dataset Card
 
 ## 1. Dataset Overview
 

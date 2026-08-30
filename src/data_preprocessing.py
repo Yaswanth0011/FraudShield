@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Data Preprocessing & Pipeline Module
+FraudShield — Data Preprocessing & Pipeline Module
 """
 
 import pandas as pd

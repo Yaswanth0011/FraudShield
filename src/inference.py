@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Real-Time Inference & Risk Scoring Engine
+FraudShield — Inference & Risk Scoring Engine
 """
 
 import os
@@ -28,7 +28,7 @@ from src.config import (
 
 class FraudInferenceEngine:
     """
-    Production-grade inference and risk classification engine for payment transactions.
+    Inference and risk classification engine for payment transactions.
     Supports 3-tier risk levels (LOW, MEDIUM, HIGH) and analyst action recommendations.
     """
 

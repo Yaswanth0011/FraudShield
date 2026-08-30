@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Root Configuration Forwarder
+FraudShield — Root Configuration Forwarder
 """
 
 from src.config import *

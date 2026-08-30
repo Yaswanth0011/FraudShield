@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Transaction Simulation & Synthetic Metadata Generator
+FraudShield — Transaction Simulation & Synthetic Metadata Generator
 """
 
 import argparse
@@ -61,7 +61,7 @@ def generate_simulation_dataset(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate SentinelShield Simulated Transaction Dataset")
+    parser = argparse.ArgumentParser(description="Generate FraudShield Simulated Transaction Dataset")
     parser.add_argument("--source", type=str, default=str(RAW_DATA_PATH), help="Source creditcard.csv path")
     parser.add_argument("--output", type=str, default=str(SIMULATED_DATA_PATH), help="Output CSV path")
     parser.add_argument("--fraud", type=int, default=492, help="Number of fraud transactions to sample")

@@ -1,5 +1,5 @@
 """
-Unit Tests for SentinelShield AI Inference Engine, 3-Tier Risk Levels, & Preprocessing
+Unit Tests for FraudShield Inference Engine, 3-Tier Risk Levels, & Preprocessing
 """
 
 import pytest

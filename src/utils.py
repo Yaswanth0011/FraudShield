@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Utility & Formatting Functions
+FraudShield — Utility & Formatting Functions
 """
 
 import random

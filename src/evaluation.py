@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Evaluation Metrics & Performance Benchmarks
+FraudShield — Evaluation Metrics & Performance Benchmarks
 """
 
 import numpy as np

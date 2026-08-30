@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Model Training & Evaluation Pipeline
+FraudShield — Model Training & Evaluation Pipeline
 """
 
 import argparse
@@ -79,7 +79,7 @@ def run_training_pipeline(
     End-to-end pipeline: load data -> preprocess & scale -> train models -> evaluate -> save artifacts.
     """
     print("=" * 60)
-    print("🛡️ SentinelShield AI - Training & Model Export Pipeline")
+    print("🛡️ FraudShield — Training & Model Export Pipeline")
     print("=" * 60)
 
     # Preprocess & Split
@@ -120,7 +120,7 @@ def run_training_pipeline(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Train SentinelShield Fraud Detection Models")
+    parser = argparse.ArgumentParser(description="Train FraudShield Fraud Detection Models")
     parser.add_argument("--data", type=str, default=None, help="Path to creditcard.csv dataset")
     args = parser.parse_args()
 

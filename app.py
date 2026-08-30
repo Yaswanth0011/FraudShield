@@ -1,5 +1,5 @@
 """
-SentinelShield AI — Enterprise Fraud Risk Intelligence & Analyst Workspace
+FraudShield — Fraud Risk Intelligence & Analyst Workspace
 """
 
 import streamlit as st
@@ -32,7 +32,7 @@ from src.utils import enrich_with_synthetic_metadata, format_currency, format_ti
 # Streamlit Page Configuration
 # ---------------------------------------------------------
 st.set_page_config(
-    page_title="SentinelShield AI — Fraud Analyst Workspace",
+    page_title="FraudShield — Fraud Analyst Workspace",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -162,7 +162,7 @@ def load_and_score_dataset(threshold: float):
 # ---------------------------------------------------------
 # Sidebar Controls
 # ---------------------------------------------------------
-st.sidebar.markdown("## 🛡️ SentinelShield AI")
+st.sidebar.markdown("## 🛡️ FraudShield")
 st.sidebar.markdown("### 🎛️ Navigation & Controls")
 
 view_selection = st.sidebar.radio(
@@ -214,8 +214,8 @@ except Exception as e:
 st.markdown(f"""
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
     <div>
-        <h1 style="margin: 0; padding: 0;">🛡️ SentinelShield AI</h1>
-        <p style="color: #8fa0b5; margin: 0; font-size: 1.05rem;">Enterprise Fraud Intelligence & Risk Analyst Workspace</p>
+        <h1 style="margin: 0; padding: 0;">🛡️ FraudShield</h1>
+        <p style="color: #8fa0b5; margin: 0; font-size: 1.05rem;">Fraud Intelligence & Risk Analyst Workspace</p>
     </div>
 </div>
 <div>
@@ -233,7 +233,7 @@ st.markdown(f"""
 # =========================================================
 if view_selection == "📊 Fraud Analytics Dashboard":
     st.subheader("📊 Executive Fraud Analytics Dashboard")
-    st.caption("Real-time portfolio surveillance, financial risk metrics, and anomaly distribution trends.")
+    st.caption("Portfolio surveillance, financial risk metrics, and anomaly distribution trends.")
 
     # 1. Primary KPIs
     total_txns = len(df)
@@ -532,7 +532,7 @@ elif view_selection == "🔍 Analyst Investigation View":
 # =========================================================
 elif view_selection == "✍️ Custom Transaction Simulator":
     st.subheader("✍️ Custom Transaction Simulator")
-    st.caption("Simulate transaction parameters and observe real-time risk classification & recommendations.")
+    st.caption("Simulate transaction parameters and observe risk classification & recommendations.")
 
     col_s1, col_s2, col_s3 = st.columns(3)
     with col_s1:
@@ -591,5 +591,5 @@ with st.expander("📚 Model Governance, Academic Attribution & Disclaimers"):
     - **Benchmark Dataset:** This application is developed using the **Credit Card Fraud Detection Dataset** released by **Worldline** and the **Université Libre de Bruxelles (ULB) Machine Learning Group**.
     - **Citation:** Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson, and Gianluca Bontempi. *Calibrating Probability with Undersampling for Unbalanced Classification*. IEEE Symposium on Computational Intelligence and Data Mining (CIDM), 2015.
     - **Machine Learning Baselines:** The underlying predictive algorithms (Random Forest Classifier, Logistic Regression, XGBoost) and PCA dimensional features are standard supervised classification and dimensionality reduction implementations from open-source libraries (`scikit-learn`, `xgboost`).
-    - **Repository Contributions:** SentinelShield AI contributes the modular inference architecture, real-time risk classification engine, dynamic threshold sensitivity calibration, synthetic identity/merchant simulation layer, and interactive dashboard interface.
+    - **Repository Contributions:** FraudShield provides the modular inference architecture, risk classification engine, dynamic threshold sensitivity calibration, synthetic identity/merchant simulation layer, and interactive dashboard interface.
     """)

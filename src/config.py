@@ -1,5 +1,5 @@
 """
-SentinelShield AI - Configuration & Constants
+FraudShield — Configuration & Constants
 """
 
 import os

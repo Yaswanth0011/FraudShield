@@ -1,3 +1,3 @@
 """
-SentinelShield AI - Test Suite
+FraudShield — Test Suite
 """
